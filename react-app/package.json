@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "CI=false react-app-rewired build",
+    "build": "CI=false react-app-rewired build && echo '/* /index.html 200' | cat >build/_redirects",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
