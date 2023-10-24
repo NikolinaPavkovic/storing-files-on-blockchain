@@ -31,7 +31,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ninterface IFaucet {\n    function addFunds() external payable;\n    function withdraw(uint withdrawAmount) external;\n}",
-  "sourcePath": "/home/nina/Desktop/master-projekat/storing-medical-files-on-blockchain/fe-app/truffle/contracts/IFaucet.sol",
+  "sourcePath": "/home/nina/Desktop/master-app/storing-files-on-blockchain/truffle/contracts/IFaucet.sol",
   "ast": {
     "absolutePath": "project:/contracts/IFaucet.sol",
     "exportedSymbols": {
@@ -168,7 +168,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-10-22T11:21:03.871Z",
+  "updatedAt": "2023-10-24T15:00:54.308Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

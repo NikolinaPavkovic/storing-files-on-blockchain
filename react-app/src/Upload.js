@@ -97,6 +97,7 @@ function Upload() {
       await web3API.contract.saveCID(result.path, file.name, {
         from: account,
       });
+      console.log(account);
     } catch (error) {
       alert(error.message);
     }
