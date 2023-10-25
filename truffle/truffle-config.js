@@ -5,11 +5,11 @@ const { INFURA_API_KEY, MNEMONIC } = process.env;
 module.exports = {
   contracts_build_directory: "./../react-app/public/contracts",
   networks: {
-    /*development: {
+    development: {
       host: "127.0.0.1", // Localhost (default: none)
       port: 7545, // Standard Ethereum port (default: none)
       network_id: "*", // Any network (default: none)
-    },*/
+    },
     sepolia: {
       provider: () => new HDWalletProvider(MNEMONIC, INFURA_API_KEY),
       network_id: 11155111, // Sepolia's network ID

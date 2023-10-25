@@ -25,9 +25,6 @@ contract File{
     }
 
     function saveCID(string memory cid, string memory filename) external {
-        //TODO: proveriti da li fajl vec postoji sacuvan od strane korisnika
-        //files[msg.sender].push(cid);
-        //files.push(cid);
         require(bytes(files[cid]).length == 0, "File with CID already exists");
         files[cid] = filename;
         mapKeys.push(cid);
