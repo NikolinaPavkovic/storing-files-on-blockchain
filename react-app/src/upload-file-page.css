@@ -1,0 +1,255 @@
+.upload-file {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100vw;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.upload-file-container {
+	display: flex;
+	flex-direction: row;
+	/* align-items: center; */
+	width: 1000px;
+	margin: 0px auto;
+	gap: 10px;
+}
+
+.upload-file-details {
+	min-width: 400px;
+}
+
+.upload-file-import-file {
+	flex: 1;
+}
+
+.connect-button {
+	background-color: #315efb;
+	height: 40px;
+	/* width: 200px; */
+	width: 100%;
+	border-radius: 100px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+	transition: all 230ms ease-in-out;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+.connect-button:hover {
+	scale: 110%;
+}
+
+.not-connected-to-metamask {
+	color: #82899b;
+	font-size: 14px;
+	font-weight: 400;
+	/* margin-top: 22px; */
+	margin-bottom: 10px;
+}
+
+.upload-file-page-text-container {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.file-card {
+	height: 200px;
+	/* margin-top: 5%; */
+	margin-top: 20px;
+
+	border-radius: 10px;
+	border: 2px dashed #82899b;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.file-card:hover .select-file-text {
+	scale: 120%;
+}
+
+.open-all-documents-button {
+}
+
+.upload-button {
+	background-color: #315efb;
+	height: 40px;
+	/* width: 200px; */
+	width: 100%;
+	border-radius: 100px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+	transition: all 230ms ease-in-out;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+.upload-button:hover:not(:disabled) {
+	scale: 110%;
+}
+
+.upload-button:disabled {
+	background-color: #315efb;
+}
+
+.open-all-documents-button {
+	background-color: #fafcff;
+	height: 40px;
+	width: 200px;
+	border-radius: 100px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	text-decoration: none;
+	color: #82899b;
+	font-size: 12px;
+	font-weight: 500;
+	transition: all 230ms ease-in-out;
+}
+.open-all-documents-button:hover {
+	scale: 110%;
+}
+
+.upload-file-body {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.no-account-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.input-file {
+	color: #82899b;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 230ms ease-in-out;
+	cursor: pointer;
+	width: unset;
+	align-self: center;
+	text-align: center;
+}
+
+.input-file:hover {
+	cursor: pointer;
+}
+
+.loader {
+	border: 2px solid #f3f3f3; /* Light grey */
+	border-top: 2px solid #65bc00; /* Blue */
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.search-container {
+	height: 40px;
+	border-radius: 6px;
+	border: 1px solid #82899b;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.search-container input {
+	height: 100%;
+	width: 100%;
+	padding: 0 14px;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	color: #82899b;
+	font-size: 14px;
+}
+
+.search-container input:focus {
+	outline: none;
+}
+.search-container input::placeholder {
+	color: #82899b;
+}
+
+.no-files-uploaded {
+	color: #82899b;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.you-can-upload-files-here {
+	margin-top: 10px;
+	color: #315efb;
+	font-size: 12px;
+	font-weight: 400;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.files-list {
+	margin-top: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	max-height: 280px;
+	min-height: 280px;
+	overflow-y: auto;
+	gap: 10px;
+}
+
+.file-item {
+	background-color: #ecf2ff;
+	cursor: pointer;
+	border-radius: 6px;
+	padding: 15px 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.files-display {
+	color: #1f2431;
+	font-size: 20px;
+	font-weight: 500;
+}
+.delete-img:hover {
+	scale: 120%;
+}
+
+.delete-img {
+	transition: all 230ms ease-in-out;
+}
